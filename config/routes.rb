@@ -20,6 +20,10 @@ Rails.application.routes.draw do
     resources :categories, only: [:index, :new, :create]
   end
 
+  resources :user, only: [:new, :create]
+  get '/logout' => 'login#destroy'
+  resources :login, only: [:new, :create]
+
   
 
   # The priority is based upon order of creation: first created -> highest priority.
