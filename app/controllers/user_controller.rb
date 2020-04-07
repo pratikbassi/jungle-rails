@@ -13,6 +13,7 @@ class UserController < ApplicationController
     else
       redirect_to '/user/new'
     end
+  end
 
 
   private
